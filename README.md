@@ -29,6 +29,21 @@ The notebook (`automobile_jupyter.ipynb`) works through the following questions:
 8. What's the breakdown of advertising expenditure by vehicle type during recessions?
 9. What effect does unemployment rate have on sales by vehicle type during recessions?
 
+## Dashboard
+
+`automobile_dashboard.py` is an interactive [Dash](https://dash.plotly.com/) app that turns the same dataset into a browsable report. Run it with:
+
+```bash
+python automobile_dashboard.py
+```
+
+then open the local URL it prints (default `http://127.0.0.1:8050`).
+
+A dropdown lets you switch between two report types:
+
+- **Recession Period Statistics** — four charts covering average sales by year, average sales by vehicle type, advertising expenditure share by vehicle type, and the effect of unemployment rate on sales by vehicle type, all restricted to recession periods.
+- **Yearly Statistics** — pick a year from the second dropdown (enabled only for this report type) to see total yearly sales, total monthly sales, average sales by vehicle type, and advertising expenditure share by vehicle type, for that year.
+
 ## Key findings
 
 - Overall automobile sales drop noticeably during recession periods, most visibly in the 2000-2001 and 2007-2009 downturns.
